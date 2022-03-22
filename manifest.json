@@ -18,7 +18,6 @@
   },
   "permissions": [
     "background",
-    "clipboardWrite",
     "storage"
   ],
   "content_scripts": [
