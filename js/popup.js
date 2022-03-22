@@ -16,7 +16,7 @@ $(function() {
     chrome.storage.local.get('github_comment_templates', function(items) {
       // 同一のkeyが既に登録されていないかチェック
       if (items.github_comment_templates.some(item => { return item.key == add_key })) {
-        alert('既に登録されているKeyです');
+        alert('Already registered Key.');
         return false;
       }
 
@@ -49,7 +49,7 @@ $(function() {
         return item.id != element_id && item.key == add_key;
       });
       if (is_duplicate_key) {
-        alert('既に登録されているKeyです');
+        alert('Already registered Key.');
         return false;
       }
       const update_github_comment_templates = items.github_comment_templates.map(item => {
@@ -94,11 +94,11 @@ $(function() {
   function createElemtnts(items) {
     for(const item of items.github_comment_templates) {
       // popup.html内に埋め込む
-      const html = '<li class="list-group-item" id="' + item.id + '"><div class="input-group mb-3"><span class="input-group-text">key</span><input type="text" class="form-control" value="' + item.key + '"></div><div class="input-group"><span class="input-group-text">template</span><textarea class="template-list-item form-control">' + item.value + '</textarea></div><button type="button" class="update_button btn btn-info">更新</button><button type="button" class="delete_button btn btn-secondary">削除</button></li>'
+      const html = '<li class="list-group-item" id="' + item.id + '"><div class="input-group mb-3"><span class="input-group-text">key</span><input type="text" class="form-control" value="' + item.key + '"></div><div class="input-group"><span class="input-group-text">template</span><textarea class="template-list-item form-control">' + item.value + '</textarea></div><button type="button" class="update_button btn btn-info">Update</button><button type="button" class="delete_button btn btn-secondary">Delete</button></li>'
       $("#template-list ul").append(html);
     }
     // 追加用
-    const html = '<li class="list-group-item"><div class="input-group mb-3"><span class="input-group-text">key</span><input type="text" class="form-control" value=""></div><div class="input-group"><span class="input-group-text">template</span><textarea class="template-list-item form-control"></textarea></div><button type="button" class="add_button btn btn-primary">登録</button></li>';
+    const html = '<li class="list-group-item"><div class="input-group mb-3"><span class="input-group-text">key</span><input type="text" class="form-control" value=""></div><div class="input-group"><span class="input-group-text">template</span><textarea class="template-list-item form-control"></textarea></div><button type="button" class="add_button btn btn-primary">Add</button></li>';
     $("#template-list ul").append(html);
   }
 
