@@ -8,6 +8,8 @@ Templates can also be added, edited, and deleted.
 ## How to use the template
 Enter the key of the template you want to use in the comment text area of Github.
 
+https://user-images.githubusercontent.com/31529905/159531239-65f8c6c3-cd28-4ed2-a900-d4ddbb8e096c.mov
+
 ## How to set up a template
 Click on the extension icon.
 - Add template
