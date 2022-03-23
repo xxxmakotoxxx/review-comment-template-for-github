@@ -3,6 +3,7 @@ Pre-prepared templates can be called up with a simple keystroke from the Github 
 Templates can also be added, edited, and deleted.
 
 # Google Chrome Extension
+https://chrome.google.com/webstore/detail/review-comment-template-f/pnacoanpplpfcmcdkhbpjfcdjbkgleao?hl=ja&authuser=2
 
 # How to use
 ## How to use the template
